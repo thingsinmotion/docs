@@ -13,8 +13,8 @@ script:
 before_deploy: docker-compose up --build
 deploy:
   - provider: s3
-    access_key_id: [secret]
-    secret_access_key: [secret]
+    access_key_id: $TEST_AWS_ACCESS_KEY_ID
+    secret_access_key: $TEST_AWS_SECRET_ACCESS_KEY
     bucket: docs-test.thingsinmotion.io
     acl: public_read
     region: ap-southeast-2
@@ -23,8 +23,8 @@ deploy:
     on:
       branch: "master"
   - provider: s3
-    access_key_id: [secret]
-    secret_access_key: [secret]
+    access_key_id: $PROD_AWS_ACCESS_KEY_ID
+    secret_access_key: $PROD_AWS_SECRET_ACCESS_KEY
     bucket: docs.thingsinmotion.io
     acl: public_read
     region: ap-southeast-2
