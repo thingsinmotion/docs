@@ -1,9 +1,6 @@
 sudo: required
 services:
   - docker
-language: ruby
-rvm:
-  - 2.5
 
 before_deploy: docker-compose up --build
 deploy:
