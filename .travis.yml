@@ -1,0 +1,29 @@
+sudo: required
+services:
+  - docker
+language: ruby
+rvm:
+  - 2.5
+
+before_deploy: docker-compose up --build
+deploy:
+  - provider: s3
+    access_key_id: [secret]
+    secret_access_key: [secret]
+    bucket: docs-test.thingsinmotion.io
+    acl: public_read
+    region: ap-southeast-2
+    skip_cleanup: true
+    local-dir: build
+    on:
+      branch: "master"
+  - provider: s3
+    access_key_id: [secret]
+    secret_access_key: [secret]
+    bucket: docs.thingsinmotion.io
+    acl: public_read
+    region: ap-southeast-2
+    skip_cleanup: true
+    local-dir: build
+    on:
+      tags: true
