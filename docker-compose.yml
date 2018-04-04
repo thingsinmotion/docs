@@ -1,0 +1,9 @@
+# https://docs.docker.com/compose/compose-file/
+version: "3"
+services:
+  tag-pipe-api-docs:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./build:/slate/build
