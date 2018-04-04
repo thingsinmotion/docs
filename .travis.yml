@@ -5,6 +5,11 @@ node_js:
 services:
   - docker
 
+install:
+  - echo 'no install required'
+script:
+  - echo 'no script required'
+
 before_deploy: docker-compose up --build
 deploy:
   - provider: s3
