@@ -67,7 +67,7 @@ mqttClient.on('message', (topic, payload) => {
 
 This topic includes inventory messages from all your readers.
 
-Using `+` as the `READER_ID` is a wildcard character that means to subscribe to all your readers inventory messages as shown in the example.
+`+` is a wildcard character that can be used as the `READER_ID` in the subscription path to subscribe to all your readers inventory messages as shown in the example.
 
 This topic publishes message in the [Inventory message payload format](#inventory-message-payload)
 
