@@ -3,24 +3,6 @@
 Consumers are MQTT clients of the TagPipe Bus. The TagPipe Bus leverages the [AWS Iot Core](https://aws.amazon.com/iot-core/features/) Message Broker.
 
 
-## Prerequisites
-
-To connect to the TagPipe Bus you will need:
-
-### Consumer details
-
-1.  **Private Key file** - Available for download after creating a consumer
-1.  **Certificate PEM file** - Available for download after creating a consumer
-1.  **Root CA file** - Available for download after creating a consumer
-1.  **Customer Id** - Available from the Consumer tab
-
-If you don't yet have these details, you can create them by logging in to your Customer Portal and create a new consumer from the Consumer tab.
-
-### AWS IoT Device SDK
-
-You can find and download the SDK here: [AWS IoT Device SDK](https://aws.amazon.com/iot/sdk/)
-
-
 ## Connecting
 
 > Connecting to MQTT Bus
@@ -45,6 +27,20 @@ const mqttClient = awsIot.device({
     host: 'a11uydwkfjit3.iot.ap-southeast-2.amazonaws.com'
 })
 ```
+### Consumer Details
+To connect to the TagPipe Bus you will need your consumer details:
+
+1.  **Private Key file** - Available for download after creating a consumer
+1.  **Certificate PEM file** - Available for download after creating a consumer
+1.  **Root CA file** - Available for download after creating a consumer
+1.  **Customer Id** - Available from the Consumer tab
+
+If you don't yet have these details, you can create them by logging in to your Customer Portal and create a new consumer from the Consumer tab.
+
+### AWS IoT Device SDK
+To connect to the MQTT Bus, you will need to include the AWS IoT Device SDK in your project.
+
+[AWS IoT Device SDK](https://aws.amazon.com/iot/sdk/)
 
 
 ## Inventory MQTT Client
