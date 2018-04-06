@@ -17,8 +17,10 @@ search: true
 
 # Introduction
 
-Welcome to the Things In Motion API! You can use our API to access inventory messages on the TagPipe Bus to get real time inventory updates via a MQTT client!
+Welcome to the Things In Motion API!
 
-You can view code examples in the dark area to the right.
+You can use our API to access inventory messages on the TagPipe Bus to get real time inventory updates via a MQTT client.
+
+Code examples are shown in the dark area to the right.
 
 
