@@ -142,7 +142,7 @@ Field | Type | Description
 `tag.epc` | Number | The [EPC](https://en.wikipedia.org/wiki/Electronic_Product_Code) value in hexadecimal format
 `tag.firstSeenTime` | Number | The time the tag was first seen during the 10 second period, in microseconds since the Epoch (00:00:00 UTC, January 1, 1970)
 `tag.lastSeenTime` | Number | The time the tag was last seen during the 10 second period, in microseconds since the Epoch (00:00:00 UTC, January 1, 1970)
-`tag.antennas` | Array | Array of antenna id's that observed then reader
+`tag.antennas` | Array | Array of antenna id's that observed the reader
 `tag.tid` | String | Tag identification memory, in a Gen 2 RFID tag, this consists of memory about the tag itself, such as the tag ID
 `tag.PcBits` | Number | The Protocol Control Bits (PC bits) of backscattered with the tags EPC
 `reader` | Object | Contains information about the reader that published the message
