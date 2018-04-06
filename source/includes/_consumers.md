@@ -28,6 +28,7 @@ const mqttClient = awsIot.device({
 })
 ```
 ### Consumer Details
+
 To connect to the TagPipe Bus you will need your consumer details:
 
 1.  **Private Key file** - Available for download after creating a consumer
@@ -38,10 +39,8 @@ To connect to the TagPipe Bus you will need your consumer details:
 If you don't yet have these details, you can create them by logging in to your Customer Portal and create a new consumer from the Consumer tab.
 
 ### AWS IoT Device SDK
-To connect to the MQTT Bus, you will need to include the AWS IoT Device SDK in your project.
 
-[AWS IoT Device SDK](https://aws.amazon.com/iot/sdk/)
-
+To connect to the MQTT Bus, you will need to include one of the [AWS IoT Device SDKs](https://aws.amazon.com/iot/sdk/) in your project.
 
 ## Inventory MQTT Client
 
@@ -133,6 +132,7 @@ This topic publishes message in the [Inventory message payload format](#inventor
   "count": 2
 }
 ```
+
 The message payload is received as a buffer and needs to be parsed to a JSON object with following structure:
 
 Field | Type | Description 
