@@ -1,6 +1,25 @@
 # Consumers
 
-Consumers are MQTT clients of the TagPipe Bus. The TagPipe Bus leverages the [AWS Iot Core](https://aws.amazon.com/iot-core/features/) Message Broker
+Consumers are MQTT clients of the TagPipe Bus. The TagPipe Bus leverages the [AWS Iot Core](https://aws.amazon.com/iot-core/features/) Message Broker.
+
+
+## Prerequisites
+
+To connect to the TagPipe Bus you will need:
+
+### Consumer details
+
+1.  **Private Key file** - Available for download after creating a consumer
+1.  **Certificate PEM file** - Available for download after creating a consumer
+1.  **Root CA file** - Available for download after creating a consumer
+1.  **Customer Id** - Available from the Consumer tab
+
+If you don't yet have these details, you can create them by logging in to your Customer Portal and create a new consumer from the Consumer tab.
+
+### AWS IoT Device SDK
+
+You can find and download the SDK here: [AWS IoT Device SDK](https://aws.amazon.com/iot/sdk/)
+
 
 ## Connecting
 
@@ -28,19 +47,9 @@ const mqttClient = awsIot.device({
 ```
 
 
-To connect to the TagPipe Bus you will need the following details, which can be obtained from your Customer Portal by creating a new consumer from the Consumer tab:
-
-1.  **Private Key file** - Available for download after creating a consumer
-1.  **Certificate PEM file** - Available for download after creating a consumer
-1.  **Root CA file** - Available for download after creating a consumer
-1.  **Customer Id** - Available from the Consumer tab
-
-In addition you will need to install the [AWS IoT Device SDK](https://aws.amazon.com/iot/sdk/)
-
-
 ## Inventory MQTT Client
 
-Inventory messages are published by each of your reader's every 10 seconds and includes all tags that were observed during that period, including when they were first seen and last seen during that 10 second period.
+Inventory messages are published by each of your readers every 10 seconds and includes all tags that were observed during that period, including when they were first seen and last seen during that 10 second period.
 
 ### Subscribe to all of your readers
 
