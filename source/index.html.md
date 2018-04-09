@@ -5,9 +5,11 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='https://signup.thingsinmotion.io/'>Sign Up</a>
-  - <a href='https://github.com/thingsinmotion/docs'>View documentation source</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
+  - <a href='http://thingsinmotion.io' target='_BLANK'>Things in Motion</a>
+  - <a href='https://signin.portal.thingsinmotion.io' target='_BLANK'>Customer Portal</a>
+  - <a href='https://signup.thingsinmotion.io' target='_BLANK'>Sign Up</a>
+  - <a href='https://github.com/thingsinmotion/docs' target='_BLANK'>View documentation source</a>
+  - <a href='https://github.com/lord/slate' target='_BLANK'>Documentation Powered by Slate</a>
 
 includes:
   - consumers
